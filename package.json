@@ -1,0 +1,63 @@
+{
+  "name": "vue-typo-redirect",
+  "version": "1.0.0",
+  "author": "Murat TURAN",
+  "description": "A vue component helps accesing to routes with typos",
+  "main": "./dist/vue-typo-redirect.common.js",
+  "scripts": {
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib -—name vue-typo-redirect src/index.js"
+  },
+  "dependencies": {
+    "fuzzy-comparison": "^2.0.0",
+    "js-levenshtein": "^1.1.6"
+  },
+  "devDependencies": {
+    "vue": "^2.6.14",
+    "core-js": "^3.8.3",
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.4",
+    "@vue/cli-plugin-unit-jest": "^5.0.4",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/test-utils": "^1.1.3",
+    "@vue/vue2-jest": "^27.0.0-alpha.2",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vuejs-accessibility": "^1.1.0",
+    "jest": "^27.0.5",
+    "prettier": "^2.4.1",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowron/vue-typo-redirect.git"
+  },
+  "keywords": [
+    "typo",
+    "vue typo",
+    "vue router",
+    "vue redirect",
+    "routes",
+    "middleware",
+    "typo",
+    "redirect"
+  ],
+  "bugs": {
+    "url": "https://github.com/snowron/vue-typo-redirect/issues"
+  },
+  "homepage": "https://github.com/snowron/vue-typo-redirect#readme"
+}
