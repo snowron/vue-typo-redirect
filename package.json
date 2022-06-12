@@ -1,6 +1,6 @@
 {
   "name": "vue-typo-redirect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Murat TURAN",
   "description": "A vue component helps accesing to routes with typos",
   "main": "./dist/vue-typo-redirect.common.js",
