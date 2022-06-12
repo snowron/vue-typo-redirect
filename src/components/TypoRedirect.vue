@@ -15,7 +15,13 @@ export default {
     "wildcardRoute",
   ],
   mounted() {
-    for (const route of this.routes || []) {
+    const routesArray =
+      this.routes ||
+      this.$router.options.routes
+        .filter((route) => route.path !== "/" && route.path !== "**")
+        .map((route) => route.path);
+
+    for (const route of routesArray) {
       const routeSplitted = route.split("/");
       const originalUrlSplitted = this.currentRoute.path.split("/");
 
