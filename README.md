@@ -31,6 +31,24 @@ const routes = [
 
 ```
 
+If you don't want to make an array with manuel processing then don't add prop it will gather all defined routes from this.$router except "**" and "/".
+
+```js
+import TypoRedirect from "vue-typo-redirect";
+
+const routes = [
+    ...
+  {
+    path: "**",
+    component: TypoRedirect,
+    props: (route) => ({
+      currentRoute: route,
+    }),
+  },
+];
+
+```
+
 ## Demo
 
 [Tests](https://github.com/snowron/vue-typo-redirect/blob/master/src/tests/TypoRedirect.spec.js)
